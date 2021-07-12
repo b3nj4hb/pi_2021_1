@@ -11,6 +11,8 @@ package pe.edu.upeu.pi_2021_1.model;
  */
 public class Empre {
 
-private int idempre;
+    private int idempre;
+    private String necesidad;
     
+   
 }
