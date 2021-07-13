@@ -6,27 +6,22 @@
 package pe.edu.upeu.pi_2021_1.daoImpl;
 
 import java.util.List;
-import pe.edu.upeu.pi_2021_1.dao.UsuarioDao;
-import pe.edu.upeu.pi_2021_1.model.Usuario;
+import pe.edu.upeu.pi_2021_1.dao.AsisDao;
+import pe.edu.upeu.pi_2021_1.model.Asis;
 
 /**
  *
  * @author benja
  */
-public class UsuarioDaoImpl implements UsuarioDao {
+public class AsisDaoImpl implements AsisDao {
 
     @Override
-    public Usuario validar(String user, String pass) {
+    public int create(Asis a) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public int create(Usuario u) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int update(Usuario u) {
+    public int update(Asis a) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -36,12 +31,12 @@ public class UsuarioDaoImpl implements UsuarioDao {
     }
 
     @Override
-    public Usuario read(int id) {
+    public Asis read(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public List<Usuario> readAll() {
+    public List<Asis> readAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -13,6 +13,28 @@ public class Empre {
 
     private int idempre;
     private String necesidad;
-    
-   
+
+    public Empre() {
+    }
+
+    public Empre(String necesidad) {
+        this.necesidad = necesidad;
+    }
+
+    public int getIdempre() {
+        return idempre;
+    }
+
+    public void setIdempre(int idempre) {
+        this.idempre = idempre;
+    }
+
+    public String getNecesidad() {
+        return necesidad;
+    }
+
+    public void setNecesidad(String necesidad) {
+        this.necesidad = necesidad;
+    }
+
 }

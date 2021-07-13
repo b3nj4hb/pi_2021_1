@@ -6,22 +6,21 @@
 package pe.edu.upeu.pi_2021_1.dao;
 
 import java.util.List;
-import pe.edu.upeu.pi_2021_1.model.Rol;
+import pe.edu.upeu.pi_2021_1.model.Curso;
 
 /**
  *
  * @author benja
  */
-public interface RolDao {
+public interface CursoDao {
 
-    public int create(Rol a);
+    public int create(Curso a);
 
-    public int update(Rol a);
+    public int update(Curso a);
 
     public int delete(int id);
 
-    public Rol read(int id);
+    public Curso read(int id);
 
-    public List<Rol> readAll();
-
+    public List<Curso> readAll();
 }

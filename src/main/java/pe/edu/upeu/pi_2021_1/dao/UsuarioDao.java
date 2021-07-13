@@ -5,10 +5,25 @@
  */
 package pe.edu.upeu.pi_2021_1.dao;
 
+import java.util.List;
+import pe.edu.upeu.pi_2021_1.model.Usuario;
+
 /**
  *
  * @author benja
  */
 public interface UsuarioDao {
-    int validar(String user, String pass);
+
+    public Usuario validar(String user, String pass);
+
+    public int create(Usuario u);
+
+    public int update(Usuario u);
+
+    public int delete(int id);
+
+    public Usuario read(int id);
+
+    public List<Usuario> readAll();
+
 }
