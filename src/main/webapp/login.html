@@ -1,49 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
-    <title>Login ADRA</title>
-
-    <!--JQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
-    <!-- Los iconos tipo Solid de Fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
-    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-    <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="css/login.css" th:href="@{/css/index.css}">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"/>
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <div class="modal-dialog text-center">
-        <div class="col-sm-8 main-section">
-            <div class="modal-content">
-                <div class="col-12 user-img">
-                    <img src="img/user.png" th:src="@{/img/user.png}"/>
+    <div class="container">
+        <h2 class="text-white text-center mb-4">ADRA ACTIVATE</h2>
+        <div class="card col-lg-5 col-md-6 col-12 mx-auto px-4 py-5">
+            <p class="text-center"><small>Iniciar Sesion</small></p>
+            <form onsubmit="return false;">
+                <div class="form-group d-flex px-3 py-1 m-0">
+                    <i class="fas fa-user my-auto"></i>
+                    <input type="text"  autocomplete="off" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Usuario">
                 </div>
-                <form class="col-12" th:action="@{/login}" method="get">
-                    <div class="form-group" id="user-group">
-                        <input type="text" class="form-control" placeholder="Nombre de usuario" name="username"/>
-                    </div>
-                    <div class="form-group" id="contrasena-group">
-                        <input type="password" class="form-control" placeholder="Contrasena" name="password"/>
-                    </div>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
-                </form>
-                <div class="col-12 forgot">
-                    <a href="#">Recordar contrasena?</a>
+                <p><small id="user_error_msg" class="text-danger"></small></p>
+                <div class="form-group d-flex px-3 py-1 m-0">
+                    <i class="fas fa-unlock-alt my-auto"></i>
+                    <input type="password" autocomplete="off" class="form-control" id="password" placeholder="Contraseña">
                 </div>
-                <div th:if="${param.error}" class="alert alert-danger" role="alert">
-		            Invalid username and password.
-		        </div>
-		        <div th:if="${param.logout}" class="alert alert-success" role="alert">
-		            You have been logged out.
-		        </div>
-            </div>
+                <p><small id="password_error_msg" class="text-danger"></small></p>
+                <div class="text-center pt-4">
+                    <a class="btn btn-primary col-4" href="vistads.html">Ingresar</a>
+                    
+                </div>
+              </form>
         </div>
     </div>
 </body>
