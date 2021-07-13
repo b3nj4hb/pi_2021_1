@@ -14,13 +14,13 @@ import pe.edu.upeu.pi_2021_1.model.Persona;
  */
 public interface PersonaDao {
 
-    int create(Persona a);
+    public int create(Persona a);
 
-    int update(Persona a);
+    public int update(Persona a);
 
-    int delete(int id);
+    public int delete(int id);
 
-    Persona read(int id);
+    public Persona read(int id);
 
-    List<Persona> readAll();
+    public List<Persona> readAll();
 }

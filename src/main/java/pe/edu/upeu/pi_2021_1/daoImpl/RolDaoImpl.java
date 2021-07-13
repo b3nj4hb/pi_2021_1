@@ -39,7 +39,5 @@ public class RolDaoImpl implements RolDao {
     public List<Rol> readAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-
     
 }
